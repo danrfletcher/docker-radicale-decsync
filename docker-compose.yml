@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  radicale:
+    build: .
+    ports:
+      - "5232:5232"
+    volumes:
+      - ./DecSync/Principal:/root/.local/share/decsync
